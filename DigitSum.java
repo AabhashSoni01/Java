@@ -6,11 +6,17 @@ public class DigitSum {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         sc.close();
+        int digit;
         int res = 0;
         while (a > 0) {
-            int digit = a % 10;
+            digit = a % 10;
             res += digit;
             a = a / 10;
+            // if (digit % 2 == 0) {
+            //     System.out.println("even");
+            // } else {
+            //     System.out.println("odd");
+            // }
         }
         System.out.println(res);
     }
