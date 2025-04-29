@@ -96,6 +96,45 @@ public class ArrayCwsQue {
         System.out.println(count + "\n");
     }
 
+    // que9
+    static void que9(int n) {
+        // to reverse a given number
+        int rev = 0;
+        while (n > 0) {
+            rev = rev * 10 + n % 10;
+            n /= 10;
+        }
+        System.out.println("que9 - reverse of number " + n + " is : " + rev + "\n");
+    }
+
+    // que10
+    static void que10(int n) {
+        // to check a number is palindrome or not
+        int rev = 0;
+        int orignal = n;
+        while (n > 0) {
+            rev = rev * 10 + n % 10;
+            n /= 10;
+        }
+        if (orignal == rev) {
+            System.out.println("que10 - " + orignal + " is palindrome\n");
+        } else {
+            System.out.println("que10 - " + orignal + " is not palindrome\n");
+        }
+    }
+
+    // que11
+    static void que11(int n) {
+        // to find all factors of a given number
+        System.out.print("que11 - factors of " + n + " are : ");
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println("\n");
+    }
+
     public static void main(String[] args) {
         que1(9);
         que2(4, 10);
@@ -105,5 +144,8 @@ public class ArrayCwsQue {
         que6(123);
         que7(541);
         que8(12345678);
+        que9(567);
+        que10(12321);
+        que11(34);
     }
 }
