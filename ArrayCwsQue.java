@@ -135,6 +135,36 @@ public class ArrayCwsQue {
         System.out.println("\n");
     }
 
+    // que12
+    static void que12(int n) {
+        // to find sum of all factors of a given number
+        int sum = 0;
+        System.out.print("que12 - sum of all factors of " + n + " is : ");
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                sum += i;
+            }
+        }
+        System.out.print(sum);
+        System.out.println("\n");
+    }
+
+    // que13
+    static void que13(int n) {
+        // to count all the factors of a given number and display it
+        int count = 0;
+        int i = 1;
+        System.out.print("que13 - the factors of " + n + " are : ");
+        for (i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                System.out.print(i + " ");
+                count++;
+            }
+        }
+        System.out.print(", and total number of factors is : " + count);
+        System.out.println("\n");
+    }
+
     public static void main(String[] args) {
         que1(9);
         que2(4, 10);
@@ -147,5 +177,7 @@ public class ArrayCwsQue {
         que9(567);
         que10(12321);
         que11(34);
+        que12(6);
+        que13(6);
     }
 }
