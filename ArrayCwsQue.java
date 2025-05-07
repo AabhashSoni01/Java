@@ -165,6 +165,26 @@ public class ArrayCwsQue {
         System.out.println("\n");
     }
 
+    // que14
+    static void que14(int n) {
+        // to check a number is prime or not
+        if (n <= 1) {
+            System.out.println("que14 - number " + n + " is invalid");
+        }
+
+        int count = 0;
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0)
+                count++;
+            if (count > 2)
+                break; // no need to check further
+        }
+        if (count == 2)
+            System.out.println("que14 - number " + n + " is prime");
+        else
+            System.out.println("que14 - number " + n + " is not prime");
+    }
+
     public static void main(String[] args) {
         que1(9);
         que2(4, 10);
@@ -179,5 +199,6 @@ public class ArrayCwsQue {
         que11(34);
         que12(6);
         que13(6);
+        que14(7);
     }
 }
