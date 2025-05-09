@@ -1,4 +1,4 @@
-public class Circle {
+class circle {
     int radius;
 
     public float Circumference() {
@@ -7,9 +7,9 @@ public class Circle {
     }
 
     public static void main(String[] args) {
-        Circle c1 = new Circle();
+        circle c1 = new circle();
         c1.radius = 5;
-        Circle c2 = new Circle();
+        circle c2 = new circle();
         c2.radius = 8;
 
         System.out.println("Circumference of circle 1 : " + c1.Circumference());

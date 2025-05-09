@@ -26,7 +26,7 @@ class Rectangle extends Shape {
 public class AbstractClassQuestion1 {
 
     public static void main(String[] args) {
-        Shape obj1 = new Circle();
+        Shape obj1 = new circle();
         obj1.area(5, 5);
         obj1.display();
 
