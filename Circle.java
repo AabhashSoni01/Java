@@ -15,4 +15,14 @@ class circle {
         System.out.println("Circumference of circle 1 : " + c1.Circumference());
         System.out.println("Circumference of circle 2 : " + c2.Circumference());
     }
+
+    public void area(int i, int j) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'area'");
+    }
+
+    public void display() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'display'");
+    }
 }
