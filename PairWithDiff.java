@@ -1,5 +1,7 @@
 import java.util.*;
 
+// Check if Array has a Pair with Given Difference K
+
 public class PairWithDiff {
     public static boolean hasPairWithDiff(int[] arr, int k) {
         Set<Integer> set = new HashSet<>();
