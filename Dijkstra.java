@@ -4,7 +4,6 @@ import java.util.*;
 
 class Dijkstra {
     public static void main(String[] args) {
-        int V = 5;
         int[][] graph = {
                 { 0, 9, 6, 5, 3 },
                 { 9, 0, INF, INF, INF },
